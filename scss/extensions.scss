@@ -1,0 +1,63 @@
+/* Helper Classes */
+.hidden {
+	display: none;
+}
+.no-margin {
+	margin: 0;
+}
+.no-margin-top {
+	margin-top:0 !important;
+}
+.no-margin-bottom {
+	margin-bottom:0 !important;
+}
+.no-pad {
+	padding: 0 !important;
+}
+.no-pad-top {
+	padding-top:0 !important;
+}
+.no-pad-bottom {
+	padding-bottom:0 !important;
+}
+.list-unstyled {
+	margin-left:0;
+	margin-bottom:0;
+
+	li {
+		list-style:none;
+	}
+}
+.overflow-hidden {
+	overflow:hidden;
+	min-height:100%;
+	height:auto;
+}
+
+
+.row {
+	max-width:75rem;
+
+	&.full-width {
+		max-width: 100%;
+
+		&.diff
+		.row {
+			margin: 0 auto;
+			max-width: 75rem;
+
+			// Avoid using this if possible
+			&.override {
+				max-width:100%;
+			}
+		}
+	}
+}
+
+.vertical-align {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
