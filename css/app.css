@@ -1,3 +1,6 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
 /* Helper Classes */
 .hidden {
   display: none; }
@@ -104,7 +107,7 @@
 
 .LineAnimationButton--full:after {
   position: absolute;
-  top: 32%;
+  top: 35%;
   left: 0.5px;
   line-height: 0; }
 
@@ -260,3 +263,81 @@
 
 .LineAnimationButton--White .LineAnimation-border_partial--top_left:after {
   border-color: #FFFFFF; }
+
+.class-list .class {
+  position: relative;
+  height: 500px;
+  background: #2c2d30;
+  overflow: hidden; }
+  .class-list .class .content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 40px; }
+    .class-list .class .content span {
+      color: #fff;
+      font-family: "futura-pt", sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 72px;
+      letter-spacing: 2px;
+      position: absolute;
+      top: -4%;
+      left: -4%;
+      opacity: 0.2; }
+    .class-list .class .content h3 {
+      font-family: "futura-pt", sans-serif;
+      font-size: 40px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: #f3f3f3;
+      z-index: 10;
+      margin: 0; }
+    .class-list .class .content svg {
+      display: block;
+      width: 40px;
+      fill: #fff; }
+    .class-list .class .content p {
+      color: #fff;
+      margin-top: 25px;
+      border-top: 2px solid #fff;
+      padding-top: 20px; }
+    .class-list .class .content .LineAnimationButton {
+      margin-top: 10px; }
+      .class-list .class .content .LineAnimationButton .LineAnimation-border--right {
+        height: inherit; }
+  .class-list .class .video {
+    height: 100%; }
+    .class-list .class .video video {
+      height: 106%;
+      margin-left: -50%; }
+    .class-list .class .video:after, .class-list .class .video:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(44, 45, 48, .5);
+      z-index: 5; }
+
+video::-webkit-media-controls {
+  display: none !important; }
+
+.heading {
+  position: relative;
+  background-image: url("/img/heading-bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 200px; }
+  .heading h3 {
+    position: absolute;
+    width: 100%;
+    color: #ffffff;
+    font-family: "purista-web", sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5%; }

@@ -1,0 +1,19 @@
+.heading {
+	position:relative;
+	background-image:url('/img/heading-bg.jpg');
+	background-size:cover;
+	background-position:50% 50%;
+	height:200px;
+
+	h3 {
+		position:absolute;
+		width:100%;
+		color:#ffffff;
+		font-family: "purista-web", sans-serif;
+		font-size:120px;
+		font-weight:700;
+		text-transform:uppercase;
+		text-align:center;
+		margin-top:5%;
+	}
+}

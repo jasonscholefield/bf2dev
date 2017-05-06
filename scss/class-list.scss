@@ -1,0 +1,80 @@
+.class-list {
+	.class {
+		position:relative;
+		height:500px;
+		background:#2c2d30;
+		overflow:hidden;
+
+		.content {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index:10;
+			padding:40px;
+
+			span {
+				color: #fff;
+				font-family: "futura-pt", sans-serif;
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: 72px;
+				letter-spacing: 2px;
+				position: absolute;
+				top: -4%;
+				left: -4%;
+				opacity: 0.2;
+			}
+			h3 {
+				font-family: "futura-pt", sans-serif;
+				font-size: 40px;
+				font-weight: 500;
+				letter-spacing:1px;
+				color: #f3f3f3;
+				z-index:10;
+				margin:0;
+			}
+			svg {
+				display:block;
+				width:40px;
+				fill:#fff;
+			}
+			p {
+				color:#fff;
+				margin-top:25px;
+				border-top:2px solid #fff;
+				padding-top:20px;
+			}
+			.LineAnimationButton  {
+				margin-top:10px;
+
+				.LineAnimation-border--right {
+					height:inherit;
+				}
+			}
+		}
+
+		.video {
+			height:100%;
+
+			video {
+				height:106%;
+				margin-left:-50%;
+			}
+
+			&:after, &:before {
+				content:'';
+				position:absolute;
+				width:100%;
+				height:100%;
+				background:rgba(44,45,48,0.5);
+				z-index:5;
+			}
+		}
+	}
+}
+
+video::-webkit-media-controls {
+	display:none !important;
+}

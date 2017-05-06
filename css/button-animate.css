@@ -1,3 +1,5 @@
+body { background:#222; text-align:center; }
+
 .LineAnimationButton {
   position: relative;
   -webkit-font-smoothing: antialiased;
@@ -6,126 +8,139 @@
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 500;
   display: inline-block;
-  transition: 0.3s;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
   padding: 18px 45px;
   color: #2B2B2B;
   background-color: transparent;
-  text-decoration: none; }
-
+  text-decoration: none;
+}
 .LineAnimationButton:hover,
 .LineAnimationButton:focus {
-  color: #2B2B2B; }
-
+  color: #2B2B2B;
+}
 .LineAnimationButton--full:after {
-  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 36' class='fill--white' fill='white'><path d='M72,50a2.33,2.33,0,0,0-.56-1.38l-16-17a2,2,0,0,0-2.83-.08,2.06,2.06,0,0,0-.08,2.83L65.37,48H30a2,2,0,0,0,0,4H65.37L52.53,65.62a2.09,2.09,0,0,0,.08,2.83,2,2,0,0,0,2.83-.08l16-17A1.78,1.78,0,0,0,72,50Z' transform='translate(-28 -31)'/></svg>");
-  height: 25px;
-  width: 20px;
-  fill: #ffffff;
+  content:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 36' class='fill--white' fill='white'><path d='M72,50a2.33,2.33,0,0,0-.56-1.38l-16-17a2,2,0,0,0-2.83-.08,2.06,2.06,0,0,0-.08,2.83L65.37,48H30a2,2,0,0,0,0,4H65.37L52.53,65.62a2.09,2.09,0,0,0,.08,2.83,2,2,0,0,0,2.83-.08l16-17A1.78,1.78,0,0,0,72,50Z' transform='translate(-28 -31)'/></svg>");
+  height:25px;
+  width:20px;
+  fill:#ffffff;
   speak: none;
   font-style: normal;
   font-weight: normal;
-  -webkit-font-feature-settings: normal;
-          font-feature-settings: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
   font-size: 25px;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
+  -moz-osx-font-smoothing: grayscale;
+}
 .LineAnimationButton--full:after {
   position: absolute;
   top: 32%;
   left: 0.5px;
-  line-height: 0; }
-
+  line-height: 0;
+}
 .LineAnimationButton--partial:after {
   position: absolute;
   left: 0;
   bottom: 0;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
+          transform: translate(-50%, -50%);
+}
 .LineAnimation-border {
   content: '';
   background-color: #2B2B2B;
-  position: absolute; }
-
+  position: absolute;
+}
 .LineAnimation-border_partial--top {
   top: 0;
   right: 0;
   left: 0;
-  height: 2px; }
-
+  height: 2px;
+}
 .LineAnimation-border--top {
   top: 0;
   right: 100%;
   left: 0;
   height: 2px;
-  transition: right 0.2s 0.6s;
-  transition-timing-function: ease-in; }
-
+  -webkit-transition: right 0.2s 0.6s;
+          transition: right 0.2s 0.6s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
 .LineAnimation-border--right {
   right: 0;
   bottom: 100%;
   top: 0;
   width: 2px;
-  transition: bottom 0.2s 0.4s;
-  transition-timing-function: ease-in; }
-
+  -webkit-transition: bottom 0.2s 0.4s;
+          transition: bottom 0.2s 0.4s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
 .LineAnimation-border--bottom {
   bottom: 0;
   right: 0;
   left: 100%;
   height: 2px;
-  transition: left 0.2s 0.2s;
-  transition-timing-function: ease-in; }
-
+  -webkit-transition: left 0.2s 0.2s;
+          transition: left 0.2s 0.2s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
 .LineAnimation-border--bottom_left {
   bottom: 0;
   height: 0;
   width: 2px;
   left: 0;
-  transition: height 0.2s 0s;
-  transition-timing-function: ease-in; }
-
+  -webkit-transition: height 0.2s 0s;
+          transition: height 0.2s 0s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
 .LineAnimation-border--top_left {
   bottom: 50%;
   left: 0;
   width: 2px;
   height: 0;
-  transition: height 0.2s 0.8s;
-  transition-timing-function: ease-in; }
-
+  -webkit-transition: height 0.2s 0.8s;
+          transition: height 0.2s 0.8s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
 /* partial button styles */
 .LineAnimation-border_partial--top {
   top: 0;
   right: 0;
   left: 0;
-  height: 2px; }
-
+  height: 2px;
+}
 .LineAnimation-border_partial--right {
   right: 0;
   bottom: 100%;
   top: 0;
   width: 2px;
-  transition: bottom 0.2s 0.2s;
-  transition-timing-function: ease-in; }
-
+  -webkit-transition: bottom 0.2s 0.2s;
+          transition: bottom 0.2s 0.2s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
 .LineAnimation-border_partial--bottom {
   bottom: 0;
   right: 0;
   left: 100%;
   height: 2px;
-  transition: left 0.2s 0s;
-  transition-timing-function: ease-in; }
-
+  -webkit-transition: left 0.2s 0s;
+          transition: left 0.2s 0s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
 .LineAnimation-border_partial--top_left {
   top: 0;
   left: 0;
   width: 2px;
-  height: 75%; }
-
+  height: 75%;
+}
 .LineAnimation-border_partial--top_left:after {
   position: absolute;
   content: "";
@@ -135,58 +150,79 @@
   border-right: 0.13em solid #2b2b2b;
   border-top: 0.13em solid #2b2b2b;
   -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
+          transform: rotate(135deg);
   left: 50%;
-  margin-top: -5px;
+  margin-top:-5px;
   margin-left: -6.1px;
-  top: 76%; }
-
+  top: 76%;
+}
 @media (min-width: 768px) {
   .LineAnimationButton:hover .LineAnimation-border--top {
     right: 0;
-    transition: right 0.2s 0.2s;
-    transition-timing-function: ease-in; }
+    -webkit-transition: right 0.2s 0.2s;
+            transition: right 0.2s 0.2s;
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+  }
   .LineAnimationButton:hover .LineAnimation-border--right {
     bottom: 0;
-    transition: bottom 0.2s 0.4s;
-    transition-timing-function: ease-in; }
+    -webkit-transition: bottom 0.2s 0.4s;
+            transition: bottom 0.2s 0.4s;
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+  }
   .LineAnimationButton:hover .LineAnimation-border--bottom {
     left: 0;
-    transition: left 0.2s 0.6s; }
+    -webkit-transition: left 0.2s 0.6s;
+            transition: left 0.2s 0.6s;
+  }
   .LineAnimationButton:hover .LineAnimation-border--bottom_left {
     height: 40%;
-    transition: height 0.2s 0.8s;
-    transition-timing-function: ease-in; }
+    -webkit-transition: height 0.2s 0.8s;
+            transition: height 0.2s 0.8s;
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+  }
   .LineAnimationButton:hover .LineAnimation-border--top_left {
     height: 50%;
-    transition: height 0.2s 0s;
-    transition-timing-function: ease-in; } }
-
+    -webkit-transition: height 0.2s 0s;
+            transition: height 0.2s 0s;
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+  }
+}
 @media (min-width: 768px) {
   .LineAnimationButton--partial:hover .LineAnimation-border_partial--right {
     bottom: 0;
-    transition: bottom 0.2s 0s;
-    transition-timing-function: ease-in; }
+    -webkit-transition: bottom 0.2s 0s;
+            transition: bottom 0.2s 0s;
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+  }
   .LineAnimationButton--partial:hover .LineAnimation-border_partial--bottom {
     left: 0%;
-    transition: left 0.2s 0.2s; } }
+    -webkit-transition: left 0.2s 0.2s;
+            transition: left 0.2s 0.2s;
+  }
+}
 
 /* setting the colors for all states */
 .LineAnimationButton--White {
-  color: #FFFFFF; }
-
+  color: #FFFFFF;
+}
 .LineAnimationButton--White:hover,
 .LineAnimationButton--White:focus {
-  color: #FFFFFF; }
-
+  color: #FFFFFF;
+}
 .LineAnimationButton--White:active {
-  color: #FFFFFF; }
-
+  color: #FFFFFF;
+}
 .LineAnimationButton--White .LineAnimation-border {
-  background-color: #FFFFFF; }
-
+  background-color: #FFFFFF;
+}
 .LineAnimationButton--White:after {
-  color: #FFFFFF; }
-
+  color: #FFFFFF;
+}
 .LineAnimationButton--White .LineAnimation-border_partial--top_left:after {
-  border-color: #FFFFFF; }
+  border-color: #FFFFFF;
+}

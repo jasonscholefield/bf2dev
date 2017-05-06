@@ -1,0 +1,8 @@
+.heading {
+  background: #2c2d30; }
+  .heading h3 {
+    color: #fff;
+    font-family: "purista-web", sans-serif;
+    font-size: 120px;
+    text-transform: uppercase;
+    text-align: center; }
