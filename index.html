@@ -10,6 +10,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 		<script src="https://use.typekit.net/ujl2ajn.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body>
 		<div class="row full-width top-nav">
@@ -35,7 +36,7 @@
 			</div>
 		</div>
 		<div class="row full-width class-list collapse">
-			<a class="medium-3 class columns">
+			<a href="#" id="trigger-overlay" class="medium-3 class columns">
 				<div class="video">
 					<video class="thevideo" muted loop>
 						<source src="img/assault.mp4" type="video/mp4">
@@ -166,9 +167,23 @@
 			</a>
 		</div>
 
+		<div class="overlay overlay-hugeinc">
+			<button type="button" class="overlay-close">Close</button>
+			<div class="row full-width class-modal assault collapse">
+				<div class="medium-7 description columns">
+					<h3>Assault</h3>
+					<p>Your place on the battlefield is at the front line. With heavy grenades and a mounted, explosive rifle this specialization is also intended to wipe out enemy vehicles.</p>
+				</div>
+				<div class="medium-5 columns">
+					<h3>wawawewa</h3>
+				</div>
+			</div>
+		</div>
+
 		<script src="js/vendor/jquery.js"></script>
 		<script src="js/vendor/what-input.js"></script>
 		<script src="js/vendor/foundation.js"></script>
+		<script src="js/classie.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/video.js"></script>
 		<script src="js/modal.js"></script>
