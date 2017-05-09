@@ -26,7 +26,7 @@
 			$('body').css('overflow','');
 			$(document).keyup(function(e){
 				if (e.keyCode == 27) {
-					$('body').css('overflow','');
+					classie.remove( overlay, 'open');
 				}
 			})
 			if( support.transitions ) {

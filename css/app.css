@@ -425,3 +425,12 @@ video::-webkit-media-controls {
     font-size: 34px; }
   .overlay ul li {
     min-height: 34px; } }
+
+.class-modal {
+  height: 100vh;
+  width: 100vw; }
+  .class-modal .description {
+    height: 100%;
+    font-family: "purista-web", sans-serif;
+    color: #fff;
+    padding: 10%; }

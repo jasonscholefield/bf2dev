@@ -114,5 +114,13 @@
 }
 
 .class-modal {
-
+	height:100vh;
+	width:100vw;
+	
+	.description {
+		height:100%;
+		font-family: "purista-web", sans-serif;
+		color:#fff;
+		padding:10%;
+	}
 }
