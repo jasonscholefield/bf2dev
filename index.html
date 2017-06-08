@@ -30,13 +30,13 @@
 				</a>
 			</div>
 		</div>
-		<div class="row full-width collapse heading">
+		<div class="row full-width collapse heading" style="background-image:url('/img/heading-class-v4.jpg');">
 			<div class="columns">
 				<h3>Classes</h3>
 			</div>
 		</div>
 		<div class="row full-width class-list collapse">
-			<a href="#" id="trigger-overlay" class="medium-3 class columns">
+			<a href="#" id="trigger-overlay" class="small-12 medium-3 class wow animated fadeInUp columns">
 				<div class="video">
 					<video class="thevideo" muted loop>
 						<source src="img/assault.mp4" type="video/mp4">
@@ -55,7 +55,7 @@
 									c0,11.2-7.2,20.8-17.2,24.3l0.2,34.2c0,0,58.8-2.5,80.2-58.8c-34.2,1.2-34.2,1.2-34.2,1.2L192,92.5z"/>
 							</svg>
 
-							<p>Your place on the battlefield is at the front line. With heavy grenades and a mounted, explosive rifle this specialization is also intended to wipe out enemy vehicles.</p>
+							<p>Your place on the battlefield is at the front line. With heavy grenades, rocket launchers, and submachine guns this specialization is also intended to wipe out enemy vehicles.</p>
 
 							<button class="LineAnimationButton LineAnimationButton--full LineAnimationButton--White">
 								<div class="LineAnimation-border LineAnimation-border--top"></div>
@@ -69,7 +69,69 @@
 					</div>
 				</div>
 			</a>
-			<a class="medium-3 class columns">
+
+			<!-- Assault Modal -->
+			<div class="overlay overlay-hugeinc">
+				<button type="button" class="overlay-close">Close</button>
+				<div class="row full-width class-modal assault align-middle collapse">
+					<div class="medium-7 columns">
+						<div class="description">
+							<h3>Assault</h3>
+							<p>Your place on the battlefield is at the front line. With heavy grenades, rocket launchers, and submachine guns this specialization is also intended to wipe out enemy vehicles.</p>
+
+							<ul class="tabs gear-heading" data-tabs id="example-tabs">
+								<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Weapons</a></li>
+								<li class="tabs-title"><a href="#panel2">Gadgets</a></li>
+							</ul>
+							<div class="tabs-content gear-content" data-tabs-content="example-tabs">
+								<div class="tabs-panel is-active" id="panel1">
+									<div class="items-description columns">
+										<div class="row align-top">
+											<div class="small-12 medium-4 item-card text-center columns">
+												<img src="/img/wpn-thompson.png" />
+												<h4>M1928A1 Thompson</h4>
+											</div>
+											<div class="small-12 medium-4 item-card text-center columns">
+												<img src="/img/wpn-stg44.png" />
+												<h4>STG-44</h4>
+											</div>
+											<div class="small-12 medium-4 item-card text-center columns">
+												<img src="/img/wpn-mp40.png" />
+												<h4>MP40</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tabs-panel" id="panel2">
+									<div class="items-description columns">
+										<div class="row align-top">
+											<div class="small-12 medium-4 item-card text-center columns">
+												<img src="/img/wpn-m9a1.png" />
+												<h4>M9A1</h4>
+											</div>
+											<div class="small-12 medium-4 item-card text-center columns">
+												<img src="/img/wpn-panzerschreck.png" />
+												<h4>Panzerschreck</h4>
+											</div>
+											<div class="small-12 medium-4 item-card text-center columns">
+												<img src="/img/wpn-tank-grenade.png" />
+												<h4>Anti-Tank Grenade</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<p class="text-background">Assault</p>
+						</div>
+					</div>
+					<div class="medium-5 media columns"></div>
+					<img src="img/assault-v2.png" class="class-img" />
+				</div>
+			</div>
+			<!-- /Assault Modal -->
+
+			<a class="small-12 medium-3 class wow animated fadeInUp columns">
 				<div class="video">
 					<video class="thevideo" muted loop>
 						<source src="img/medic.mp4" type="video/mp4">
@@ -100,7 +162,8 @@
 					</div>
 				</div>
 			</a>
-			<a class="medium-3 class columns">
+
+			<a class="small-12 medium-3 class wow animated fadeInUp columns">
 				<div class="video">
 					<video class="thevideo" muted loop>
 						<source src="img/support.mp4" type="video/mp4">
@@ -134,7 +197,8 @@
 					</div>
 				</div>
 			</a>
-			<a class="medium-3 class columns">
+
+			<a class="small-12 medium-3 class wow animated fadeInUp columns">
 				<div class="video">
 					<video class="thevideo" muted loop>
 						<source src="img/scout.mp4" type="video/mp4">
@@ -167,20 +231,11 @@
 			</a>
 		</div>
 
-		<div class="overlay overlay-hugeinc">
-			<button type="button" class="overlay-close">Close</button>
-			<div class="row full-width class-modal assault align-middle collapse">
-				<div class="medium-7 description columns">
-					<h3>Assault</h3>
-					<p>Your place on the battlefield is at the front line. With heavy grenades and a mounted, explosive rifle this specialization is also intended to wipe out enemy vehicles.</p>
-				</div>
-				<div class="medium-5 media columns">
-					<h3>wawawewa</h3>
-				</div>
-			</div>
-		</div>
-
 		<script src="js/vendor/jquery.js"></script>
+		<script src="js/wow.js"></script>
+		<script>
+			new WOW().init();
+		</script>
 		<script src="js/vendor/what-input.js"></script>
 		<script src="js/vendor/foundation.js"></script>
 		<script src="js/classie.js"></script>

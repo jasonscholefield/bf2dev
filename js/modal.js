@@ -44,6 +44,11 @@
 	$('.class-list a.class').click(function(event){
 		event.preventDefault();
 	});
+	$(document).keyup(function(e) {
+		if (e.keyCode == 27) {
+			toggleOverlay();
+		}
+	});
 	triggerBttn.addEventListener( 'click', toggleOverlay );
 	closeBttn.addEventListener( 'click', toggleOverlay );
 })();
