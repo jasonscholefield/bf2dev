@@ -1,0 +1,114 @@
+.container {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
+
+.text {
+	position: relative;
+	z-index: 1000;
+	padding: 5em 3em;
+
+	section {
+		font-size: 1.25em;
+		line-height: 1.7;
+
+		h2 {
+			font-size: 2.7em;
+			font-weight: 400;
+			margin: 0;
+			text-align: left;
+		}
+		&::not(:first-child) h2 {
+			padding: 2em 0 0 0;
+		}
+		p {
+			font-size: 0.95em;
+			margin: 0.5em 0 1.5em;
+
+			&.text-intro {
+				font-size: 1.3em;
+				font-style: italic;
+				line-height: 1.5;
+				margin: 0.5em 0 1.25em;
+				text-align: left;
+				color: #9d9c95;
+			}
+		}
+	}
+	figure {
+		margin: 1em 0 2em;
+
+		img {
+			max-width: 100%;
+		}
+	}
+	figcaption {
+		font-size: 0.85em;
+		font-style: italic;
+		padding: 1em 1.5em 0;
+		text-align: center;
+		color: #5f646c;
+	}
+	blockquote {
+		font-size: 2em;
+		line-height: 1.5;
+		position: relative;
+		text-align: left;
+		color: #939997;
+
+		&::before {
+			content: '\201C';
+			font-size: 2.5em;
+			font-style: italic;
+			line-height: 1;
+			position: absolute;
+			top: -0.15em;
+			right: 100%;
+			margin: 0 0.075em 0 0;
+			color: #f0f3f3;
+		}
+		span {
+			font-size: 0.5em;
+			white-space: nowrap;
+			color: #cbcece;
+		}
+	}
+}
+
+.title-up {
+	font-size: 0.365em;
+	font-weight: bold;
+	display: block;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	color: #cecec5;
+}
+
+.title-down {
+	font-size: 1.35em;
+	font-weight: 400;
+	line-height: 0.9;
+	display: block;
+	padding: 0.15em 0 0.35em;
+	color: #5f646c;
+}
+
+.js-section {
+	max-width: 700px;
+}
+
+.js-gallery {
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	&-content {
+		font-size: 0;
+		text-align: center;
+	}
+	 img {
+		max-width: 100%;
+		margin: 10px 0;
+	}
+}
