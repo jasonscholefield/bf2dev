@@ -657,27 +657,39 @@ hr.white-two {
 .text {
   position: relative;
   z-index: 1000;
-  padding: 5em 3em; }
+  padding: 5em 3em;
+  background: #2c2d30; }
   .text section {
     font-size: 1.25em;
-    line-height: 1.7; }
+    line-height: 1.7;
+    margin-bottom: 10em; }
+    .text section h1 {
+      width: 100%;
+      color: #ffffff;
+      font-family: "purista-web", sans-serif;
+      font-size: 120px;
+      font-weight: 700;
+      text-transform: uppercase; }
     .text section h2 {
       font-size: 2.7em;
       font-weight: 400;
       margin: 0;
       text-align: left; }
+    .text section h2.title-down {
+      font-size: 80px; }
     .text section::not(:first-child) h2 {
       padding: 2em 0 0 0; }
     .text section p {
+      color: #ffffff;
       font-size: 0.95em;
       margin: 0.5em 0 1.5em; }
       .text section p.text-intro {
         font-size: 1.3em;
         font-style: italic;
         line-height: 1.5;
-        margin: 0.5em 0 1.25em;
+        margin: 0 0 1.25em;
         text-align: left;
-        color: #9d9c95; }
+        color: #ffffff; }
   .text figure {
     margin: 1em 0 2em; }
     .text figure img {
@@ -687,7 +699,7 @@ hr.white-two {
     font-style: italic;
     padding: 1em 1.5em 0;
     text-align: center;
-    color: #5f646c; }
+    color: #cccccc; }
   .text blockquote {
     font-size: 2em;
     line-height: 1.5;
@@ -718,12 +730,12 @@ hr.white-two {
   color: #cecec5; }
 
 .title-down {
-  font-size: 1.35em;
-  font-weight: 400;
-  line-height: 0.9;
-  display: block;
-  padding: 0.15em 0 0.35em;
-  color: #5f646c; }
+  width: 100%;
+  color: #ffffff;
+  font-family: "purista-web", sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 .js-section {
   max-width: 700px; }
