@@ -10,6 +10,7 @@
 	z-index: 1000;
 	padding: 5em 3em;
 	background:#2c2d30;
+	width:50%;
 
 	section {
 		font-size: 1.25em;
@@ -92,6 +93,18 @@
 		}
 	}
 }
+.image-grid {
+	display:inline-block;
+	margin-bottom:25px;
+
+	img.half {
+		float:left;
+		max-width:50%;
+	}
+}
+img.full {
+	margin-bottom:25px;
+}
 
 .title-up {
 	font-size: 0.365em;
@@ -101,7 +114,6 @@
 	text-transform: uppercase;
 	color: #cecec5;
 }
-
 .title-down {
 	width:100%;
 	color:#ffffff;
@@ -112,7 +124,6 @@
 }
 
 .js-section {
-	max-width: 700px;
 }
 
 .js-gallery {

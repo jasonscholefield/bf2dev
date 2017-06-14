@@ -1,20 +1,76 @@
+.container {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0; }
+
 .text {
   position: relative;
   z-index: 1000;
-  padding: 5em 3em; }
-
-.text section {
-  font-size: 1.25em;
-  line-height: 1.7; }
-
-.text section h2 {
-  font-size: 2.7em;
-  font-weight: 400;
-  margin: 0;
-  text-align: left; }
-
-.text section:not(:first-child) h2 {
-  padding: 2em 0 0 0; }
+  padding: 5em 3em;
+  background: #2c2d30;
+  width: 50%; }
+  .text section {
+    font-size: 1.25em;
+    line-height: 1.7;
+    margin-bottom: 10em; }
+    .text section h1 {
+      width: 100%;
+      color: #ffffff;
+      font-family: "purista-web", sans-serif;
+      font-size: 120px;
+      font-weight: 700;
+      text-transform: uppercase; }
+    .text section h2 {
+      font-size: 2.7em;
+      font-weight: 400;
+      margin: 0;
+      text-align: left; }
+    .text section h2.title-down {
+      font-size: 80px; }
+    .text section::not(:first-child) h2 {
+      padding: 2em 0 0 0; }
+    .text section p {
+      color: #ffffff;
+      font-size: 0.95em;
+      margin: 0.5em 0 1.5em; }
+      .text section p.text-intro {
+        font-size: 1.3em;
+        font-style: italic;
+        line-height: 1.5;
+        margin: 0 0 1.25em;
+        text-align: left;
+        color: #ffffff; }
+  .text figure {
+    margin: 1em 0 2em; }
+    .text figure img {
+      max-width: 100%; }
+  .text figcaption {
+    font-size: 0.85em;
+    font-style: italic;
+    padding: 1em 1.5em 0;
+    text-align: center;
+    color: #cccccc; }
+  .text blockquote {
+    font-size: 2em;
+    line-height: 1.5;
+    position: relative;
+    text-align: left;
+    color: #939997; }
+    .text blockquote::before {
+      content: '\201C';
+      font-size: 2.5em;
+      font-style: italic;
+      line-height: 1;
+      position: absolute;
+      top: -0.15em;
+      right: 100%;
+      margin: 0 0.075em 0 0;
+      color: #f0f3f3; }
+    .text blockquote span {
+      font-size: 0.5em;
+      white-space: nowrap;
+      color: #cbcece; }
 
 .title-up {
   font-size: 0.365em;
@@ -25,76 +81,19 @@
   color: #cecec5; }
 
 .title-down {
-  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
-  font-size: 1.35em;
-  font-weight: 400;
-  line-height: 0.9;
-  display: block;
-  padding: 0.15em 0 0.35em;
-  color: #5f646c; }
-
-.text figure {
-  margin: 1em 0 2em; }
-
-.text figure img {
-  max-width: 100%; }
-
-.text figcaption {
-  font-size: 0.85em;
-  font-style: italic;
-  padding: 1em 1.5em 0;
-  text-align: center;
-  color: #5f646c; }
-
-.text section p {
-  font-size: 0.95em;
-  margin: 0.5em 0 1.5em; }
-
-.text section p.text-intro {
-  font-size: 1.3em;
-  font-style: italic;
-  line-height: 1.5;
-  margin: 0.5em 0 1.25em;
-  text-align: left;
-  color: #9d9c95; }
-
-.text blockquote {
-  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
-  font-size: 2em;
-  line-height: 1.5;
-  position: relative;
-  text-align: left;
-  color: #939997; }
-
-.text blockquote::before {
-  content: '\201C';
-  font-size: 2.5em;
-  font-style: italic;
-  line-height: 1;
-  position: absolute;
-  top: -0.15em;
-  right: 100%;
-  margin: 0 0.075em 0 0;
-  color: #f0f3f3; }
-
-.text blockquote span {
-  font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 0.5em;
-  white-space: nowrap;
-  color: #cbcece; }
-
-.js-section {
-  width: 50%;
-  max-width: 700px; }
+  width: 100%;
+  color: #ffffff;
+  font-family: "purista-web", sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 .js-gallery {
   padding-top: 50px;
   padding-bottom: 50px; }
-
-.js-gallery-content {
-  font-size: 0;
-  text-align: center; }
-
-.js-gallery-content img {
-  max-width: 100%;
-  margin: 10px 0; }
+  .js-gallery-content {
+    font-size: 0;
+    text-align: center; }
+  .js-gallery img {
+    max-width: 100%;
+    margin: 10px 0; }
