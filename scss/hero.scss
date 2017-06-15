@@ -1,5 +1,6 @@
 .hero {
 	height:100vh;
+	background-size:cover;
 
 	h1 {
 		font-family:"purista-web", sans-serif;
@@ -10,5 +11,20 @@
 	}
 	.LineAnimationButton {
 		margin-top:32px;
+	}
+	.hero-image-scroll-down {
+		position: absolute;
+		bottom: 4rem;
+		left: 50%;
+		margin-left: -20px;
+		cursor: pointer;
+		z-index: 1;
+
+		&:hover {
+			opacity:0.5;
+			transition: all .2s ease-in-out;
+			-moz-transition: all .2s ease-in-out;
+			-webkit-transition: all .2s ease-in-out;
+		}
 	}
 }

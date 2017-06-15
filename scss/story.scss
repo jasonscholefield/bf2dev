@@ -34,12 +34,15 @@
 				font-size:80px;
 			}
 		}
+		h3 {
+			color:#fff;
+		}
 		&::not(:first-child) h2 {
 			padding: 2em 0 0 0;
 		}
 		p {
 			color:#ffffff;
-			font-size: 0.95em;
+			font-size: 16px;
 			margin: 0.5em 0 1.5em;
 
 			&.text-intro {
