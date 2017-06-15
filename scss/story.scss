@@ -15,7 +15,6 @@
 	section {
 		font-size: 1.25em;
 		line-height: 1.7;
-		margin-bottom:10em;
 
 		h1 {
 			width:100%;
@@ -104,6 +103,11 @@
 }
 img.full {
 	margin-bottom:25px;
+}
+.divider {
+	margin-top:4em;
+	padding-top:4em;
+	border-top:1px dashed #cecece;
 }
 
 .title-up {
