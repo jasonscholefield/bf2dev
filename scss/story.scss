@@ -7,7 +7,6 @@
 
 .text {
 	position: relative;
-	z-index: 1000;
 	padding: 5em 3em;
 	background:#2c2d30;
 	width:50%;
@@ -68,8 +67,7 @@
 		color: #cccccc;
 	}
 	blockquote {
-		font-size: 2em;
-		line-height: 1.5;
+		font-size:0.75em;
 		position: relative;
 		text-align: left;
 		color: #939997;
@@ -89,6 +87,23 @@
 			font-size: 0.5em;
 			white-space: nowrap;
 			color: #cbcece;
+		}
+		&.letter {
+			font-size:0.75em;
+			background:#F1F1D4;
+			padding:40px 80px;
+
+			p {
+				font-family:'Courier', serif;
+				color:#2c2d30;
+			}
+			&::before {
+				content:'';
+				border:none;
+			}
+			cite {
+				font-size:1em;
+			}
 		}
 	}
 }
@@ -128,6 +143,26 @@ img.full {
 }
 
 .js-section {
+}
+
+figure {
+	position:relative;
+
+	&.placeholder {
+		&:before {
+			content: 'Screenshot Placeholder';
+			position: absolute;
+			width: 100%;
+			z-index: 5;
+			text-align: center;
+			top: 50%;
+			transform: translateY(-50%);
+			color: rgba(255,255,255,0.25);
+			font-weight: 700;
+			font-family: 'purista-web', futura-pt, sans-serif;
+			font-size: 48px;
+		}
+	}
 }
 
 .js-gallery {

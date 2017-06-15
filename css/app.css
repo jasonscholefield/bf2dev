@@ -664,7 +664,6 @@ hr.white-two {
 
 .text {
   position: relative;
-  z-index: 1000;
   padding: 5em 3em;
   background: #2c2d30;
   width: 50%; }
@@ -709,8 +708,7 @@ hr.white-two {
     text-align: center;
     color: #cccccc; }
   .text blockquote {
-    font-size: 2em;
-    line-height: 1.5;
+    font-size: 0.75em;
     position: relative;
     text-align: left;
     color: #939997; }
@@ -728,6 +726,18 @@ hr.white-two {
       font-size: 0.5em;
       white-space: nowrap;
       color: #cbcece; }
+    .text blockquote.letter {
+      font-size: 0.75em;
+      background: #F1F1D4;
+      padding: 40px 80px; }
+      .text blockquote.letter p {
+        font-family: 'Courier', serif;
+        color: #2c2d30; }
+      .text blockquote.letter::before {
+        content: '';
+        border: none; }
+      .text blockquote.letter cite {
+        font-size: 1em; }
 
 .image-grid {
   display: inline-block;
@@ -759,6 +769,22 @@ img.full {
   font-size: 72px;
   font-weight: 700;
   text-transform: uppercase; }
+
+figure {
+  position: relative; }
+  figure.placeholder:before {
+    content: 'Screenshot Placeholder';
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .25);
+    font-weight: 700;
+    font-family: 'purista-web', futura-pt, sans-serif;
+    font-size: 48px; }
 
 .js-gallery {
   padding-top: 50px;

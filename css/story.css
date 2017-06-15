@@ -6,14 +6,12 @@
 
 .text {
   position: relative;
-  z-index: 1000;
   padding: 5em 3em;
   background: #2c2d30;
   width: 50%; }
   .text section {
     font-size: 1.25em;
-    line-height: 1.7;
-    margin-bottom: 10em; }
+    line-height: 1.7; }
     .text section h1 {
       width: 100%;
       color: #ffffff;
@@ -72,6 +70,21 @@
       white-space: nowrap;
       color: #cbcece; }
 
+.image-grid {
+  display: inline-block;
+  margin-bottom: 25px; }
+  .image-grid img.half {
+    float: left;
+    max-width: 50%; }
+
+img.full {
+  margin-bottom: 25px; }
+
+.divider {
+  margin-top: 4em;
+  padding-top: 4em;
+  border-top: 1px dashed #cecece; }
+
 .title-up {
   font-size: 0.365em;
   font-weight: bold;
@@ -87,6 +100,17 @@
   font-size: 72px;
   font-weight: 700;
   text-transform: uppercase; }
+
+figure img:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: 'Placeholder Screenshot';
+  font-family: "purista-web", sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .25); }
 
 .js-gallery {
   padding-top: 50px;
