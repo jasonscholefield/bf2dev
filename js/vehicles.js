@@ -5,15 +5,17 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 var tv,
     playerDefaults = {autoplay: 0, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 0, iv_load_policy: 3};
 var vid = [
-      {'videoId': 'CGAQ4h7HkRQ', 'startSeconds': 0, 'endSeconds': 040, 'suggestedQuality': 'hd720'},
-      {'videoId': 'CGAQ4h7HkRQ', 'startSeconds': 0, 'endSeconds': 040, 'suggestedQuality': 'hd720'},
-      {'videoId': 'CGAQ4h7HkRQ', 'startSeconds': 0, 'endSeconds': 040, 'suggestedQuality': 'hd720'},
-      {'videoId': 'CGAQ4h7HkRQ', 'startSeconds': 0, 'endSeconds': 040, 'suggestedQuality': 'hd720'}
+      {'videoId': '09w9MTtZDEM', 'startSeconds': 1, 'endSeconds': 10, 'suggestedQuality': 'hd720'}, // Fury
+      {'videoId': '09w9MTtZDEM', 'startSeconds': 71, 'endSeconds': 77, 'suggestedQuality': 'hd720'},
+      {'videoId': '09w9MTtZDEM', 'startSeconds': 94, 'endSeconds': 98, 'suggestedQuality': 'hd720'},
+      {'videoId': '09w9MTtZDEM', 'startSeconds': 100, 'endSeconds': 103, 'suggestedQuality': 'hd720'},
+      {'videoId': 'T7O7BtBnsG4', 'startSeconds': 33, 'endSeconds': 37, 'suggestedQuality': 'hd720'}, // Dunkirk
+      {'videoId': 'T7O7BtBnsG4', 'startSeconds': 55, 'endSeconds': 65, 'suggestedQuality': 'hd720'},
+      {'videoId': 'T7O7BtBnsG4', 'startSeconds': 95, 'endSeconds': 98, 'suggestedQuality': 'hd720'},
+      {'videoId': 'T7O7BtBnsG4', 'startSeconds': 134, 'endSeconds': 142, 'suggestedQuality': 'hd720'}
     ],
     randomVid = Math.floor(Math.random() * vid.length),
     currVid = randomVid;
-
-$('.hi em:last-of-type').html(vid.length);
 
 function onYouTubePlayerAPIReady(){
   tv = new YT.Player('tv', {events: {'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange}, playerVars: playerDefaults});
@@ -27,7 +29,6 @@ function onPlayerReady(){
 function onPlayerStateChange(e) {
   if (e.data === 1){
     $('#tv').addClass('active');
-    $('.hi em:nth-of-type(2)').html(currVid + 1);
   } else if (e.data === 2){
     $('#tv').removeClass('active');
     if(currVid === vid.length - 1){
@@ -56,19 +57,4 @@ function vidRescale(){
 
 $(window).on('load resize', function(){
   vidRescale();
-});
-
-$('.hi span:first-of-type').on('click', function(){
-  $('#tv').toggleClass('mute');
-  $('.hi em:first-of-type').toggleClass('hidden');
-  if($('#tv').hasClass('mute')){
-    tv.mute();
-  } else {
-    tv.unMute();
-  }
-});
-
-$('.hi span:last-of-type').on('click', function(){
-  $('.hi em:nth-of-type(2)').html('~');
-  tv.pauseVideo();
 });

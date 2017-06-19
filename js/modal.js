@@ -24,11 +24,6 @@
 				classie.remove( overlay, 'close' );
 			};
 			$('body').css('overflow','');
-			$(document).keyup(function(e){
-				if (e.keyCode == 27) {
-					classie.remove( overlay, 'open');
-				}
-			})
 			if( support.transitions ) {
 				overlay.addEventListener( transEndEventName, onEndTransitionFn );
 			}
@@ -45,7 +40,7 @@
 		event.preventDefault();
 	});
 	$(document).keyup(function(e) {
-		if (e.keyCode == 27) {
+		if ((e.keyCode == 27) && ($('.overlay').hasClass('open'))) {
 			toggleOverlay();
 		}
 	});
