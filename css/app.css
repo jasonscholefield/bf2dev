@@ -520,7 +520,7 @@ video::-webkit-media-controls {
   top: 0;
   left: 0;
   background: #2c2d30;
-  background: url("/img/modal-bg.png");
+  background: url("img/modal-bg.png");
   background-size: cover;
   z-index: 10; }
   .overlay .overlay-close {
