@@ -1,0 +1,26 @@
+.cta {
+	color:#fff;
+	background-position:center center;
+	padding:8em 0;
+
+	h3 {
+		font-size:4em;
+		margin-bottom:50px;
+	}
+	h5 {
+		font-size:1em;
+		text-transform:uppercase;
+	}
+	a {
+		color:#fff;
+		font-size:18px;
+		border:1px solid #fff;
+		text-transform:uppercase;
+		padding:12px 24px;
+		transition: 0.3s;
+
+		&:hover {
+			padding:18px 28px;
+		}
+	}
+}

@@ -510,11 +510,11 @@ video::-webkit-media-controls {
     width: 100%;
     color: #ffffff;
     font-family: "purista-web", sans-serif;
-    font-size: 120px;
+    font-size: 8em;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    margin: 5% 0; }
+    margin: 1em 0 0.2em; }
 
 /* Overlay style */
 .overlay {
@@ -861,3 +861,66 @@ figure {
     transition: opacity .1s; }
     .tv .screen.active {
       opacity: 1; }
+
+.cta {
+  color: #fff;
+  background-position: center center;
+  padding: 8em 0; }
+  .cta h3 {
+    font-size: 4em;
+    margin-bottom: 50px; }
+  .cta h5 {
+    font-size: 1em;
+    text-transform: uppercase; }
+  .cta a {
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    transition: 0.3s; }
+    .cta a:hover {
+      padding: 18px 28px; }
+
+.pre-footer {
+  background: #252525;
+  padding-top: 36px;
+  color: #a3a3a3; }
+  .pre-footer h5 {
+    color: #fff;
+    font-family: 'purista-web', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .pre-footer .pre-footer-nav {
+    margin-bottom: 20px; }
+    .pre-footer .pre-footer-nav li {
+      display: inline-block;
+      margin-right: 40px; }
+      .pre-footer .pre-footer-nav li a {
+        color: #a3a3a3;
+        font-family: "Roboto",sans-serif;
+        font-size: 16px;
+        line-height: 24px; }
+        .pre-footer .pre-footer-nav li a:hover, .pre-footer .pre-footer-nav li a:focus {
+          color: #f17f1a;
+          border-bottom: 2px solid #f17f1a; }
+  .pre-footer .social {
+    margin-bottom: 20px; }
+    .pre-footer .social li {
+      display: inline-block;
+      margin-left: 24px; }
+      .pre-footer .social li a .icon {
+        fill: #f17f1a;
+        height: 22px;
+        width: 22px; }
+  .pre-footer .pre-links {
+    border-bottom: 1px solid #595959; }
+  .pre-footer .logo-row .logo {
+    margin: 40px 0; }
+  .pre-footer .legal {
+    font-size: 12px; }
+
+.footer {
+  background: #161616; }
