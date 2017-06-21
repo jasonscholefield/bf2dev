@@ -200,7 +200,7 @@ body {
 .top-nav {
   position: absolute;
   width: 100%;
-  background: #2c2d30;
+  background: #131418;
   padding: 13px 0; }
 
 .hero {
@@ -423,11 +423,11 @@ body {
   border-color: #FFFFFF; }
 
 .class-list {
-  background: #2c2d30; }
+  background: #131418; }
   .class-list .class {
     position: relative;
     height: 500px;
-    background: #2c2d30;
+    background: #131418;
     overflow: hidden; }
     .class-list .class:first-of-type {
       -webkit-animation-delay: .2s;
@@ -520,7 +520,7 @@ video::-webkit-media-controls {
   top: 0;
   left: 0;
   background: #2c2d30;
-  background: url("/img/modal-bg.png");
+  background: url("../img/modal-bg.png");
   background-size: cover;
   z-index: 10; }
   .overlay .overlay-close {
@@ -679,7 +679,7 @@ hr.white-two {
 .text {
   position: relative;
   padding: 5em 3em;
-  background: #2c2d30;
+  background: #131418;
   width: 50%; }
   .text section {
     font-size: 1.25em;
@@ -748,7 +748,7 @@ hr.white-two {
       padding: 40px 80px; }
       .text blockquote.letter p {
         font-family: 'Courier', serif;
-        color: #2c2d30; }
+        color: #131418; }
       .text blockquote.letter::before {
         content: '';
         border: none; }
@@ -854,6 +854,6 @@ figure {
     z-index: 1;
     margin: auto;
     opacity: 0;
-    transition: opacity .5s; }
+    transition: opacity .1s; }
     .tv .screen.active {
       opacity: 1; }
