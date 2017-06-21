@@ -13,14 +13,18 @@
 	}
 	a {
 		color:#fff;
-		font-size:18px;
+		font-size:20px;
 		border:1px solid #fff;
 		text-transform:uppercase;
-		padding:12px 24px;
+		padding:18px 30px;
 		transition: 0.3s;
 
 		&:hover {
-			padding:18px 28px;
+			padding:24px 36px;
+		}
+		&.main {
+			background:#f17f1a;
+			border:1px solid #f17f1a;
 		}
 	}
 }
