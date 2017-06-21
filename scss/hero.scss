@@ -3,11 +3,14 @@
 	background-size:cover;
 
 	h1 {
-		font-family:"purista-web", sans-serif;
+		font-family:"komu-a", sans-serif;
 		color:#ffffff;
 		text-transform:uppercase;
-		font-weight:bold;
-		font-size:90px;
+		font-size:9em;
+		letter-spacing:5px;
+		background: -webkit-linear-gradient(180deg, #f8d1bc 0%, #fa4d01 50%, #3c1c1c 100%);
+		-webkit-background-clip: text;
+		-webkit-text-stroke: 4px transparent;
 	}
 	.LineAnimationButton {
 		margin-top:32px;

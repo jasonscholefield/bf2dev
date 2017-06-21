@@ -9,6 +9,10 @@
 
 		&:first-of-type {
 			animation-delay:.2s;
+
+			video {
+				margin-left:-100%;
+			}
 		}
 		&:nth-of-type(2) {
 			animation-delay:.4s;
@@ -18,6 +22,10 @@
 		}
 		&:nth-of-type(4) {
 			animation-delay:.8s;
+
+			video {
+				margin-left:-100%;
+			}
 		}
 		.content {
 			height: 100%;
@@ -71,8 +79,7 @@
 			height:100%;
 
 			video {
-				height:106%;
-				margin-left:-50%;
+				height:100%
 			}
 
 			&:after, &:before {

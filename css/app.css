@@ -207,11 +207,14 @@ body {
   height: 100vh;
   background-size: cover; }
   .hero h1 {
-    font-family: "purista-web", sans-serif;
+    font-family: "komu-a", sans-serif;
     color: #ffffff;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 90px; }
+    font-size: 9em;
+    letter-spacing: 5px;
+    background: -webkit-linear-gradient(180deg, #f8d1bc 0%, #fa4d01 50%, #3c1c1c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent; }
   .hero .LineAnimationButton {
     margin-top: 32px; }
   .hero .hero-image-scroll-down {
@@ -432,6 +435,8 @@ body {
     .class-list .class:first-of-type {
       -webkit-animation-delay: .2s;
       animation-delay: .2s; }
+      .class-list .class:first-of-type video {
+        margin-left: -100%; }
     .class-list .class:nth-of-type(2) {
       -webkit-animation-delay: .4s;
       animation-delay: .4s; }
@@ -441,6 +446,8 @@ body {
     .class-list .class:nth-of-type(4) {
       -webkit-animation-delay: .8s;
       animation-delay: .8s; }
+      .class-list .class:nth-of-type(4) video {
+        margin-left: -100%; }
     .class-list .class .content {
       height: 100%;
       width: 100%;
@@ -483,8 +490,7 @@ body {
     .class-list .class .video {
       height: 100%; }
       .class-list .class .video video {
-        height: 106%;
-        margin-left: -50%; }
+        height: 100%; }
       .class-list .class .video:after, .class-list .class .video:before {
         content: '';
         position: absolute;
@@ -499,10 +505,8 @@ video::-webkit-media-controls {
 .heading {
   position: relative;
   background-size: cover;
-  background-position: 50% 10%;
-  height: 200px; }
+  background-position: 50% 10%; }
   .heading h3 {
-    position: absolute;
     width: 100%;
     color: #ffffff;
     font-family: "purista-web", sans-serif;
@@ -510,7 +514,7 @@ video::-webkit-media-controls {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 5%; }
+    margin: 5% 0; }
 
 /* Overlay style */
 .overlay {
