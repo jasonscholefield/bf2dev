@@ -440,9 +440,13 @@ body {
     .class-list .class:nth-of-type(2) {
       -webkit-animation-delay: .4s;
       animation-delay: .4s; }
+      .class-list .class:nth-of-type(2) video {
+        margin-left: -50%; }
     .class-list .class:nth-of-type(3) {
       -webkit-animation-delay: .6s;
       animation-delay: .6s; }
+      .class-list .class:nth-of-type(3) video {
+        margin-left: -50%; }
     .class-list .class:nth-of-type(4) {
       -webkit-animation-delay: .8s;
       animation-delay: .8s; }
@@ -591,62 +595,64 @@ video::-webkit-media-controls {
 .class-modal {
   height: 100vh;
   width: 100vw; }
-  .class-modal .description {
-    font-family: "roboto", sans-serif;
-    color: #fff;
-    padding: 15%; }
-    .class-modal .description h3 {
-      font-size: 7.5em;
-      font-weight: 700; }
-    .class-modal .description h4 {
-      margin: 0; }
-    .class-modal .description p {
-      margin: 0; }
-    .class-modal .description .text-background {
-      font-family: "futura-pt", sans-serif;
-      font-size: 12em;
-      font-weight: 700;
-      position: absolute;
-      left: 72px;
-      bottom: -140px;
-      color: rgba(255, 255, 255, .05); }
-    .class-modal .description .gear-heading {
-      background: transparent;
-      border: none;
-      margin-top: 60px; }
-      .class-modal .description .gear-heading .tabs-title a {
-        color: white;
-        background: rgba(34, 32, 33, .5);
-        font-family: 'futura-pt', sans-serif;
-        font-size: 18px;
-        font-weight: 300;
-        text-transform: uppercase;
-        padding: 8px 32px;
-        padding: 0.5rem 2rem;
-        opacity: 0.75;
-        transition: all .5s ease-in-out;
-        -moz-transition: all .5s ease-in-out;
-        -webkit-transition: all .5s ease-in-out;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-        border-bottom: 2px solid rgba(255, 255, 255, .6); }
-        .class-modal .description .gear-heading .tabs-title a:hover, .class-modal .description .gear-heading .tabs-title a:focus, .class-modal .description .gear-heading .tabs-title a[aria-selected='true'] {
-          opacity: 1.0;
-          background: white;
-          color: #000; }
-    .class-modal .description .tabs-content {
+  .class-modal .description-container {
+    z-index: 2; }
+    .class-modal .description-container .description {
+      font-family: "roboto", sans-serif;
       color: #fff;
-      background: transparent;
-      border: none; }
-      .class-modal .description .tabs-content .tabs-panel {
-        padding: 15px 0 0 0; }
-      .class-modal .description .tabs-content .items-description .item-card img {
-        max-width: 80%; }
-      .class-modal .description .tabs-content .items-description .item-card h4 {
-        font-family: 'futura-pt', sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 15px; }
+      padding: 15%; }
+      .class-modal .description-container .description h3 {
+        font-size: 7.5em;
+        font-weight: 700; }
+      .class-modal .description-container .description h4 {
+        margin: 0; }
+      .class-modal .description-container .description p {
+        margin: 0; }
+      .class-modal .description-container .description .text-background {
+        font-family: "futura-pt", sans-serif;
+        font-size: 12em;
+        font-weight: 700;
+        position: absolute;
+        left: 72px;
+        bottom: -140px;
+        color: rgba(255, 255, 255, .05); }
+      .class-modal .description-container .description .gear-heading {
+        background: transparent;
+        border: none;
+        margin-top: 60px; }
+        .class-modal .description-container .description .gear-heading .tabs-title a {
+          color: white;
+          background: rgba(34, 32, 33, .5);
+          font-family: 'futura-pt', sans-serif;
+          font-size: 18px;
+          font-weight: 300;
+          text-transform: uppercase;
+          padding: 8px 32px;
+          padding: 0.5rem 2rem;
+          opacity: 0.75;
+          transition: all .5s ease-in-out;
+          -moz-transition: all .5s ease-in-out;
+          -webkit-transition: all .5s ease-in-out;
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+          border-bottom: 2px solid rgba(255, 255, 255, .6); }
+          .class-modal .description-container .description .gear-heading .tabs-title a:hover, .class-modal .description-container .description .gear-heading .tabs-title a:focus, .class-modal .description-container .description .gear-heading .tabs-title a[aria-selected='true'] {
+            opacity: 1.0;
+            background: white;
+            color: #000; }
+      .class-modal .description-container .description .tabs-content {
+        color: #fff;
+        background: transparent;
+        border: none; }
+        .class-modal .description-container .description .tabs-content .tabs-panel {
+          padding: 15px 0 0 0; }
+        .class-modal .description-container .description .tabs-content .items-description .item-card img {
+          max-width: 80%; }
+        .class-modal .description-container .description .tabs-content .items-description .item-card h4 {
+          font-family: 'futura-pt', sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 15px; }
   .class-modal .media {
     height: 100vh;
     background: rgba(255, 255, 255, .25); }
@@ -661,6 +667,8 @@ video::-webkit-media-controls {
     transition: opacity 0.43s 0.6s, -webkit-transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
     transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
     transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93), -webkit-transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93); }
+  .class-modal.assault .class-img {
+    right: 27%; }
 
 hr.white-one {
   margin-bottom: 30px;
@@ -819,7 +827,8 @@ figure {
 .vehicles {
   background: #000;
   padding: 10em 0;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .video-gradient {
   position: absolute;
@@ -845,20 +854,24 @@ figure {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 0;
   width: 100%;
   height: 100%;
   overflow: hidden; }
   .tv .screen {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 0;
     margin: auto;
     opacity: 0;
-    transition: opacity .1s; }
+    transition: opacity .1s;
+    min-height: 110%;
+    min-width: 110%;
+    width: auto;
+    height: auto; }
     .tv .screen.active {
       opacity: 1; }
 
@@ -868,26 +881,30 @@ figure {
   padding: 8em 0; }
   .cta h3 {
     font-size: 4em;
-    margin-bottom: 50px; }
+    margin-bottom: 40px; }
   .cta h5 {
     font-size: 1em;
     text-transform: uppercase; }
   .cta a {
+    display: inline-block;
     color: #fff;
     font-size: 20px;
     border: 1px solid #fff;
     text-transform: uppercase;
     padding: 18px 30px;
     transition: 0.3s; }
-    .cta a:hover {
-      padding: 24px 36px; }
+    .cta a:hover, .cta a:focus {
+      background: transparent;
+      color: #f17f1a; }
     .cta a.main {
       background: #f17f1a;
       border: 1px solid #f17f1a; }
+      .cta a.main:hover, .cta a.main:focus {
+        background: transparent;
+        color: #f17f1a; }
 
 .pre-footer {
-  background: #252525;
-  padding-top: 36px;
+  background-position: center center;
   color: #a3a3a3; }
   .pre-footer h5 {
     color: #fff;
@@ -920,10 +937,31 @@ figure {
         width: 22px; }
   .pre-footer .pre-links {
     border-bottom: 1px solid #595959; }
-  .pre-footer .logo-row .logo {
-    margin: 40px 0; }
+  .pre-footer .logo-col .logo {
+    display: inline-block;
+    margin: 40px 40px 40px 0; }
+    .pre-footer .logo-col .logo:last-of-type {
+      margin-right: 0; }
   .pre-footer .legal {
-    font-size: 12px; }
+    font-size: 12px;
+    margin-bottom: 40px; }
 
-.footer {
-  background: #161616; }
+.ea-footer {
+  border-top: 1px solid #222;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .ea-footer .ea-links li {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    display: inline-block;
+    margin-right: 24px;
+    text-transform: uppercase; }
+    .ea-footer .ea-links li a {
+      color: #585858; }
+    .ea-footer .ea-links li:last-of-type {
+      margin-right: 0; }
+
+.copyright p {
+  color: #585858;
+  font-size: 14px; }

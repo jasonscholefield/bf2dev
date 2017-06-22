@@ -5,13 +5,14 @@
 
 	h3 {
 		font-size:4em;
-		margin-bottom:50px;
+		margin-bottom:40px;
 	}
 	h5 {
 		font-size:1em;
 		text-transform:uppercase;
 	}
 	a {
+		display:inline-block;
 		color:#fff;
 		font-size:20px;
 		border:1px solid #fff;
@@ -19,12 +20,18 @@
 		padding:18px 30px;
 		transition: 0.3s;
 
-		&:hover {
-			padding:24px 36px;
+		&:hover, &:focus {
+			background:transparent;
+			color:#f17f1a;
 		}
 		&.main {
 			background:#f17f1a;
 			border:1px solid #f17f1a;
+
+			&:hover, &:focus {
+				background:transparent;
+				color:#f17f1a;
+			}
 		}
 	}
 }

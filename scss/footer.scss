@@ -1,6 +1,5 @@
 .pre-footer {
-	background:#252525;
-	padding-top:36px;
+	background-position:center center;
 	color:#a3a3a3;
 
 	h5 {
@@ -50,15 +49,48 @@
 	.pre-links {
 		border-bottom:1px solid #595959;
 	}
-	.logo-row {
+	.logo-col {
 		.logo {
-			margin:40px 0;
+			display:inline-block;
+			margin:40px 40px 40px 0;
+
+			&:last-of-type {
+				margin-right:0;
+			}
 		}
 	}
 	.legal {
 		font-size:12px;
+		margin-bottom:40px;
 	}
 }
-.footer {
-	background:#161616;	
+.ea-footer {
+	border-top:1px solid #222;
+	padding-top:40px;
+	padding-bottom:40px;
+
+	.ea-links {
+		li {
+			font-size:16px;
+			font-weight:bold;
+			line-height:24px;
+			display:inline-block;
+			margin-right:24px;
+			text-transform:uppercase;
+
+			a {
+				color:#585858;
+
+			}
+			&:last-of-type {
+				margin-right:0;
+			}
+		}
+	}
+}
+.copyright {
+	p {
+		color:#585858;
+		font-size:14px;
+	}
 }

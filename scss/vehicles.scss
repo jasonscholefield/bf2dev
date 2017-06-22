@@ -2,6 +2,7 @@
 	background:#000;
 	padding:10em 0;
 	position:relative;
+	overflow:hidden;
 }
 .video-gradient {
 	position: absolute;
@@ -29,21 +30,26 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 0;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
 	
 	.screen {
 		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		z-index: 1;
+		top: 50%;
+		left: 50%;
+		// right: 0;
+		// bottom: 0;
+		transform: translate(-50%,-50%);
+		z-index: 0;
 		margin: auto;
 		opacity: 0;
 		transition: opacity .1s;
+		min-height:110%;
+		min-width:110%;
+		width:auto;
+		height:auto;
 
 		&.active {
 			opacity: 1;
