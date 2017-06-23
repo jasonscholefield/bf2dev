@@ -11,27 +11,28 @@
 		font-size:1em;
 		text-transform:uppercase;
 	}
-	a {
-		display:inline-block;
-		color:#fff;
-		font-size:20px;
-		border:1px solid #fff;
-		text-transform:uppercase;
-		padding:18px 30px;
-		transition: 0.3s;
+}
+
+.btn {
+	display:inline-block;
+	color:#fff;
+	font-size:20px;
+	border:1px solid #fff;
+	text-transform:uppercase;
+	padding:18px 30px;
+	transition: 0.3s;
+
+	&:hover, &:focus {
+		background:#fff;
+		color:#131418;
+	}
+	&.main {
+		background:#f17f1a;
+		border:1px solid #f17f1a;
 
 		&:hover, &:focus {
 			background:transparent;
 			color:#f17f1a;
-		}
-		&.main {
-			background:#f17f1a;
-			border:1px solid #f17f1a;
-
-			&:hover, &:focus {
-				background:transparent;
-				color:#f17f1a;
-			}
 		}
 	}
 }

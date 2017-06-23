@@ -846,6 +846,18 @@ figure {
   padding: 10em 0;
   position: relative;
   overflow: hidden; }
+  .vehicles h2 {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 30px;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s; }
+  .vehicles p {
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s; }
 
 .video-gradient {
   position: absolute;
@@ -902,23 +914,24 @@ figure {
   .cta h5 {
     font-size: 1em;
     text-transform: uppercase; }
-  .cta a {
-    display: inline-block;
-    color: #fff;
-    font-size: 20px;
-    border: 1px solid #fff;
-    text-transform: uppercase;
-    padding: 18px 30px;
-    transition: 0.3s; }
-    .cta a:hover, .cta a:focus {
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  padding: 18px 30px;
+  transition: 0.3s; }
+  .btn:hover, .btn:focus {
+    background: #fff;
+    color: #131418; }
+  .btn.main {
+    background: #f17f1a;
+    border: 1px solid #f17f1a; }
+    .btn.main:hover, .btn.main:focus {
       background: transparent;
       color: #f17f1a; }
-    .cta a.main {
-      background: #f17f1a;
-      border: 1px solid #f17f1a; }
-      .cta a.main:hover, .cta a.main:focus {
-        background: transparent;
-        color: #f17f1a; }
 
 .pre-footer {
   background-position: center center;
