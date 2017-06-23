@@ -205,6 +205,8 @@ body {
 
 .intro {
   background: #1c1b1b;
+  background-size: cover;
+  background-position: center 25%;
   padding: 8em 0;
   color: #fff; }
   .intro h2 {
