@@ -4,3 +4,21 @@
 	background:#131418;
 	padding:13px 0;
 }
+.intro {
+	background:#1c1b1b;
+	padding:8em 0;
+	color:#fff;
+
+	h2 {
+		font-size:32px;
+		line-height:48px;
+		margin-bottom:30px;
+		animation-delay:.2s;
+	}
+	p {
+		font-size:16px;
+		line-height:32px;
+		margin-bottom:30px;
+		animation-delay:.4s;
+	}
+}

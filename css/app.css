@@ -203,6 +203,23 @@ body {
   background: #131418;
   padding: 13px 0; }
 
+.intro {
+  background: #1c1b1b;
+  padding: 8em 0;
+  color: #fff; }
+  .intro h2 {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 30px;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s; }
+  .intro p {
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s; }
+
 .hero {
   height: 100vh;
   background-size: cover; }
