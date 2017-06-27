@@ -1,5 +1,5 @@
 (function() {
-	var triggerBttn = document.getElementById( 'trigger-overlay' ),
+	var triggerBttn = document.getElementsByClassName( 'class' ),
 		overlay = document.querySelector( 'div.overlay' ),
 		closeBttn = overlay.querySelector( 'button.overlay-close' );
 		transEndEventNames = {
@@ -44,6 +44,9 @@
 			toggleOverlay();
 		}
 	});
-	triggerBttn.addEventListener( 'click', toggleOverlay );
+	for (var i = 0; i < triggerBttn.length; i++) {
+	  triggerBttn[i].addEventListener('click', toggleOverlay, false);
+	}
+	// triggerBttn.addEventListener( 'click', toggleOverlay );
 	closeBttn.addEventListener( 'click', toggleOverlay );
 })();
