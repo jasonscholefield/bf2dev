@@ -73,6 +73,20 @@
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 	.vehicles {
+		background-size:cover;
+		background-position:center;
 		padding:5em 0;
+
+		h2 {
+			font-size:24px;
+			line-height:36px;
+		}
+		p {
+			font-size:14px;
+			line-height:28px;
+		}
+		.tv {
+			display:none;
+		}
 	}
 }

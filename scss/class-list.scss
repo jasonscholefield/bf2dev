@@ -41,7 +41,7 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			z-index:5;
+			z-index:10;
 			padding:40px;
 
 			span {
@@ -103,4 +103,19 @@
 }
 video::-webkit-media-controls {
 	display:none !important;
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	.class-list {
+		.class {
+			background-size:cover;
+
+			.video {
+				video {
+					display:none;
+				}
+			}
+		}
+	}
 }

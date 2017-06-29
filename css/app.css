@@ -497,7 +497,7 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      z-index: 5;
+      z-index: 10;
       padding: 40px; }
       .class-list .class .content span {
         color: #fff;
@@ -544,6 +544,13 @@ body {
 
 video::-webkit-media-controls {
   display: none !important; }
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .class-list .class {
+    background-size: cover; }
+    .class-list .class .video video {
+      display: none; } }
 
 .heading {
   position: relative;
@@ -954,7 +961,17 @@ figure {
 /* Small only */
 @media screen and (max-width: 39.9375em) {
   .vehicles {
-    padding: 5em 0; } }
+    background-size: cover;
+    background-position: center;
+    padding: 5em 0; }
+    .vehicles h2 {
+      font-size: 24px;
+      line-height: 36px; }
+    .vehicles p {
+      font-size: 14px;
+      line-height: 28px; }
+    .vehicles .tv {
+      display: none; } }
 
 .cta {
   color: #fff;
@@ -1054,3 +1071,26 @@ figure {
   font-size: 14px; }
 
 /* Small only */
+@media screen and (max-width: 39.9375em) {
+  .pre-footer .pre-footer-nav li {
+    float: left;
+    width: 45%;
+    margin: 0 0 10px; }
+  .pre-footer .social li:first-of-type {
+    margin-left: 0; }
+  .pre-footer .logo-col .logo {
+    margin: 30px 10px;
+    max-width: 30%; }
+    .pre-footer .logo-col .logo:first-of-type {
+      margin-left: 0; }
+    .pre-footer .logo-col .logo:last-of-type {
+      margin-right: 0; }
+  .pre-footer .legal {
+    margin-top: 30px; }
+  .ea-footer {
+    padding-bottom: 20px; }
+    .ea-footer img {
+      margin-bottom: 25px; }
+    .ea-footer .ea-links li {
+      font-size: 14px;
+      margin-bottom: 10px; } }

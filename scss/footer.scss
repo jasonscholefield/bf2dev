@@ -97,5 +97,49 @@
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-	
+	.pre-footer {
+		.pre-footer-nav {
+			li {
+				float:left;
+				width:45%;
+				margin:0 0 10px;
+			}
+		}
+		.social {
+			li {
+				&:first-of-type {
+					margin-left:0;
+				}
+			}
+		}
+		.logo-col {
+			.logo {
+				margin:30px 10px;
+				max-width:30%;
+
+				&:first-of-type {
+					margin-left:0;
+				}
+				&:last-of-type {
+					margin-right:0;
+				}
+			}
+		}
+		.legal {
+			margin-top:30px;
+		}
+	}
+	.ea-footer {
+		padding-bottom:20px;
+
+		img {
+			margin-bottom:25px;
+		}
+		.ea-links {
+			li {
+				font-size:14px;
+				margin-bottom:10px;
+			}
+		}
+	}
 }
