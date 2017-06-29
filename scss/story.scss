@@ -8,7 +8,7 @@
 .text {
 	position: relative;
 	padding: 5em 3em;
-	background:#131418;
+	background:rgba(19,20,24,1);
 	width:50%;
 
 	section {
@@ -187,6 +187,7 @@ figure {
 	.text {
 		padding:2em;
 		width:100%;
+		background:rgba(19,20,24,0.75);
 
 		section {
 			h1 {
