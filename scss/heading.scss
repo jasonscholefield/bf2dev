@@ -14,3 +14,12 @@
 		margin:1em 0 0.2em;
 	}
 }
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	.heading {
+		h3 {
+			font-size:3em;
+		}
+	}
+}

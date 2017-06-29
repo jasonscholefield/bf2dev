@@ -181,3 +181,38 @@ figure {
 		margin: 10px 0;
 	}
 }
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	.text {
+		padding:2em;
+		width:100%;
+
+		section {
+			h1 {
+				font-size:64px;
+			}
+			p {
+				font-size:14px;
+			}
+			h2 {
+				font-size:24px;
+
+				.title-up {
+					font-size:10px;
+					letter-spacing:5px;
+				}
+				.title-down {
+					font-size:36px;
+				}
+			}
+		}
+		figure {
+			&.placeholder {
+				&:before {
+					font-size:24px;
+				}
+			}
+		}
+	}
+}

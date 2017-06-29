@@ -24,3 +24,19 @@
 		animation-delay:.4s;
 	}
 }
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	.intro {
+		padding:4em 0;
+
+		h2 {
+			font-size:24px;
+			line-height:36px;
+		}
+		p {
+			font-size:14px;
+			line-height:28px;
+		}
+	}
+}
