@@ -534,7 +534,7 @@ body {
       height: 100%; }
       .class-list .class .video video {
         height: 100%; }
-      .class-list .class .video:after, .class-list .class .video:before {
+      .class-list .class .video:before {
         content: '';
         position: absolute;
         width: 100%;
