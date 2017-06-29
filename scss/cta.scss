@@ -36,3 +36,12 @@
 		}
 	}
 }
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	.cta {
+		h3 {
+			font-size:48px;
+		}
+	}
+}

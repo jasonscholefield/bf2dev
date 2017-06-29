@@ -984,6 +984,11 @@ figure {
       background: transparent;
       color: #f17f1a; }
 
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .cta h3 {
+    font-size: 48px; } }
+
 .pre-footer {
   background-position: center center;
   color: #a3a3a3; }
@@ -1046,3 +1051,5 @@ figure {
 .copyright p {
   color: #585858;
   font-size: 14px; }
+
+/* Small only */
