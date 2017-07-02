@@ -520,6 +520,7 @@ body {
       .class-list .class .content svg {
         display: block;
         width: 40px;
+        height: 40px;
         fill: #fff; }
       .class-list .class .content p {
         color: #fff;
