@@ -755,7 +755,7 @@ hr.white-two {
         max-height: 100vh;
         opacity: 0.5; }
     .overlay-hugeinc.open:before {
-      height: 200%; } }
+      height: 130%; } }
 
 .container {
   position: fixed;
