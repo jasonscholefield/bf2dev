@@ -210,3 +210,46 @@ hr.white-two {
 	border-top: 2px solid #fff;
 	margin-top: 0;
 }
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	.overlay {
+		height:auto;
+
+		&.open {
+			overflow:scroll;
+		}
+		.class-modal {
+			height:auto;
+
+			.description-container {
+				.description {
+					padding:14% 6%;
+
+					h3 {
+						font-size:5em;
+					}
+				}
+			}
+			.media {
+				display:none;
+			}
+			&.assault {
+				.class-img {
+					position:absolute;
+					top:0;
+					left:-60%;
+					max-height:100vh;
+					opacity:0.5;
+				}
+			}
+		}
+		&-hugeinc {
+			&.open {
+				&:before {
+					height:200%;
+				}
+			}
+		}
+	}
+}
